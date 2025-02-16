@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo" width="96" height="96" class="logo">
+            </a>
+        </div>
+        <div class="text-container">
+            <span class="typing-text"></span>
+            <span class="cursor">|</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Logo"  class="logo">
+                    </a>
+                    <!-- <span>Sazarcreation</span> -->
+                </div>
+                <div class="menu-icon">☰</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Courses</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Home Section with Carousel -->
+        <section id="home" class="hero">
+            <div class="carousel">
+                <div class="carousel-content">
+                    <h1>Prepares Students for Job & In-Person Training</h1>
+                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="img/building.jpeg" alt="About Us">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Registered Training Organization</h2>
+                        <p>Welcome to RTO, a leading Registered Training Organization (RTO) dedicated to providing high-quality, nationally recognized training. Our mission is to empower students with practical skills and knowledge that prepare them for real-world success.
+
+                            With a team of experienced trainers and industry experts, we offer a range of Business Management, Information Technology, etc. programs designed to meet industry standards and employer expectations.
+                            
+                            At RTO, we believe in hands-on learning, flexible study options, and personalized support to help students achieve their career goals. Whether you're starting a new career, upskilling, or looking for professional development, we are here to guide you every step of the way.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="img/training.jpeg" alt="Nationally Recognized Training">
+                        <div class="service-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <path d="M7 21v-4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"/>
+                                <circle cx="12" cy="8" r="2"/>
+                                <path d="M12 10v4"/>
+                                <path d="M16 10h4"/>
+                              </svg>
+                              
+                            <h3>Nationally Recognized Training</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/workplace.jpeg" alt="Workplace & On-the-Job Training">
+                        <div class="service-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="10" width="18" height="8" rx="1" ry="1"/>
+                                <path d="M6 18v2"/>
+                                <path d="M18 18v2"/>
+                                <path d="M9 10V6a3 3 0 0 1 6 0v4"/>
+                                <path d="M8 6h8"/>
+                              </svg>
+                              
+                            <h3>Workplace & On-the-Job Training</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/support.jpeg" alt="Student Support & Career Guidance">
+                        <div class="service-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 10a7 7 0 0 1 14 0v4a7 7 0 0 1-14 0z"/>
+                                <path d="M21 10v4a7 7 0 0 1-7 7"/>
+                                <path d="M3 10a7 7 0 0 0 7 7h4"/>
+                                <circle cx="12" cy="18" r="2"/>
+                                <path d="M21 12h1"/>
+                                <path d="M3 12H2"/>
+                              </svg>
+                              
+                            <h3>Student Support & Career Guidance</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+            <div class="container">
+                <h2>Our Courses</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="img/hardware.jpeg" alt="t1">
+                        <h3>Certificate III in Information Technology </h3>
+                        <p>Basic IT skills, hardware, and software support.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/Cybersecurity Leadership Essentials_ Key Concepts from CISM Training.jpeg" alt="t1">
+                        <h3>Certificate IV in Cyber Security</h3>
+                        <p>Foundations of cybersecurity, threat detection, and risk management.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/html css js photos _.jpeg" alt="t1">
+                        <h3>Certificate IV in Web Development</h3>
+                        <p>HTML, CSS, JavaScript, and basic web design principles.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="img/itsupport.jpeg" alt="t1">
+                        <h3>Diploma of Information Technology</h3>
+                        <p>Covers programming, networking, database management, and IT support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Latest Blog Posts</h2>
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <img src="img/ITcareera.jpeg" alt="#">
+                        <div class="blog-content">
+                            <h3>The Future of IT Careers: What Skills Are in Demand?</h3>
+                            <p>The IT industry is evolving rapidly, and professionals must stay updated with the latest skills. Some of the most in-demand IT skills in 2025 include:<br>
+                                * Cybersecurity – Companies need experts to protect data from cyber threats.<br>
+                                * Cloud Computing – Platforms like AWS and Azure are growing in demand.<br>
+                                * Artificial Intelligence & Machine Learning – AI is shaping the future of automation and business intelligence.<br>
+                                * Software Development – Full-stack developers with JavaScript, Python, and React expertise are highly sought after.<br>
+                                If you're considering an IT career, now is the perfect time to upskill!
+                            </p>
+                            <!-- <a href="#" class="read-more">Read More →</a> -->
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="img/ITtrainig.jpeg" alt="#">
+                        <div class="blog-content">
+                            <h3>Why Choose an RTO for Your IT Training? </h3>
+                            <p>
+                                Choosing an RTO for IT training offers several advantages:<br>
+                                * Nationally Recognized Qualifications – Earn certifications that are valued by employers.<br>
+                                * Practical Hands-On Training – Learn by doing, not just theory.<br>
+                                * Industry-Relevant Courses – RTOs align courses with job market needs.<br>
+                                * Flexible Learning Options – Study online, in-person, or hybrid to fit your schedule.<br>
+                                If you want to start or advance your IT career, an RTO is a great option!
+                            </p>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="img/guide.png" alt="#">
+                        <div class="blog-content">
+                            <h3>How to Get Started in Cybersecurity: A Beginner’s Guide</h3>
+                            <p>
+                                Cybersecurity is one of the fastest-growing IT fields. Here’s how to start:<br>
+                                * Learn the Basics – Understand networking, operating systems, and security fundamentals.<br>
+                                * Take an Accredited Course – A Certificate IV in Cyber Security or Diploma of Network Security is a great starting point.<br>
+                                * Get Hands-On Experience – Use platforms like TryHackMe and Hack The Box.<br>
+                                * Earn Certifications – Certifications like CompTIA Security+ or CEH can boost your career prospects.<br>
+                                Cyber threats are increasing daily—start your cybersecurity journey today!
+                            </p>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="img/booast.jpeg" alt="#">
+                        <div class="blog-content">
+                            <h3> Top 5 IT Certifications That Boost Your Career</h3>
+                            <p>
+                                Certifications can help you stand out in the competitive IT job market. Here are the top five IT certifications:<br>
+                                * AWS Certified Solutions Architect – Cloud computing expertise.<br>
+                                * CompTIA Security+ – Entry-level cybersecurity certification.<br>
+                                * Certified Ethical Hacker (CEH) – For aspiring penetration testers.<br>
+                                * Cisco Certified Network Associate (CCNA) – Networking fundamentals.<br>
+                                * Google IT Support Professional Certificate – Perfect for beginners in IT support.<br>
+                                Getting certified can open new job opportunities and increase your earning potential!
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+       <section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+            <!-- Map Section -->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424144.8999875394!2d150.65178935476713!3d-33.847356780315045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b06eb18168fd%3A0x5017d681632cf40!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2snp!4v1709766543276!5m2!1sen!2snp"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <p>Registered Training Organization, Sydney, Australia</p>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <p>devendrad2058@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <p>+61 000000000</p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <script>
+                    // Initialize EmailJS with your public key
+                    (function() {
+                        emailjs.init("YNH-MmqmJBsQ51kTN"); // Replace with your actual public key
+                    })();
+            
+                    // Add submit event listener to the form
+                    document.getElementById('contactForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+            
+                        // Get form data
+                        const formData = {
+                            from_name: document.getElementById('name').value,
+                            from_email: document.getElementById('email').value,
+                            message: document.getElementById('message').value
+                        };
+            
+                        // Log the form data to console
+                        console.log('Form Data:', formData);
+            
+                        // Send email using EmailJS
+                        emailjs.send('service_b4gcqll', 'template_2fq4wh9', formData)
+                            .then(function(response) {
+                                console.log('SUCCESS!', response.status, response.text);
+                                alert('Message sent successfully!');
+                                document.getElementById('contactForm').reset();
+                            }, function(error) {
+                                console.log('FAILED...', error);
+                                alert('Failed to send message. Please try again.');
+                            });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <script src="script.js"></script>
+    <footer style="height: 1cm; background-color: #704929; display: flex; align-items: center; justify-content: center; color: #fff; position: relative; font-size: 10px;">
+        <a href="#" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-weight: bold;">
+          Website developed by Devendra
+        </a>
+      </footer>
+
+</body>
+
+</html>
