@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     const logoContainer = document.querySelector('.logo-container');
     const typingText = document.querySelector('.typing-text');
-    const fullText = 'REGISTERED TRAINING ORGANIZATION';
+    const fullText = 'AUSTRALASIAN INTERNATIONAL Academy';
 
     // Show logo with animation
     setTimeout(() => {

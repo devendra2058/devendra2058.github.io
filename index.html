@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RTO</title>
+    <title>AIA</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="style.css">
     
@@ -63,12 +63,14 @@
                         <img src="img/building.jpeg" alt="About Us">
                     </div>
                     <div class="about-text">
-                        <h2>About Registered Training Organization</h2>
-                        <p>Welcome to RTO, a leading Registered Training Organization (RTO) dedicated to providing high-quality, nationally recognized training. Our mission is to empower students with practical skills and knowledge that prepare them for real-world success.
+                        <h2>About Australasian
+                            International
+                            Academy</h2>
+                        <p>Welcome to AIA, a leading Registered Training Organization (RTO) dedicated to providing high-quality, nationally recognized training. Our mission is to empower students with practical skills and knowledge that prepare them for real-world success.
 
                             With a team of experienced trainers and industry experts, we offer a range of Business Management, Information Technology, etc. programs designed to meet industry standards and employer expectations.
                             
-                            At RTO, we believe in hands-on learning, flexible study options, and personalized support to help students achieve their career goals. Whether you're starting a new career, upskilling, or looking for professional development, we are here to guide you every step of the way.</p>
+                            At AIA, we believe in hands-on learning, flexible study options, and personalized support to help students achieve their career goals. Whether you're starting a new career, upskilling, or looking for professional development, we are here to guide you every step of the way.</p>
                         
                     </div>
                 </div>
@@ -179,14 +181,14 @@
                     <article class="blog-post">
                         <img src="img/ITtrainig.jpeg" alt="#">
                         <div class="blog-content">
-                            <h3>Why Choose an RTO for Your IT Training? </h3>
+                            <h3>Why Choose an AIA for Your IT Training? </h3>
                             <p>
-                                Choosing an RTO for IT training offers several advantages:<br>
+                                Choosing an AIA for IT training offers several advantages:<br>
                                 * Nationally Recognized Qualifications – Earn certifications that are valued by employers.<br>
                                 * Practical Hands-On Training – Learn by doing, not just theory.<br>
-                                * Industry-Relevant Courses – RTOs align courses with job market needs.<br>
+                                * Industry-Relevant Courses – AIAs align courses with job market needs.<br>
                                 * Flexible Learning Options – Study online, in-person, or hybrid to fit your schedule.<br>
-                                If you want to start or advance your IT career, an RTO is a great option!
+                                If you want to start or advance your IT career, an AIA is a great option!
                             </p>
                         </div>
                     </article>
@@ -248,7 +250,9 @@
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                             <circle cx="12" cy="10" r="3"/>
                         </svg>
-                        <p>Registered Training Organization, Sydney, Australia</p>
+                        <p>AIA-Australasian
+                            International
+                            Academy, Sydney, Australia</p>
                     </div>
                     <div class="contact-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -316,6 +320,60 @@
           Website developed by Devendra
         </a>
       </footer>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+        
+        let isValid = true;
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
+
+        // Remove previous error messages
+        document.querySelectorAll(".error-message").forEach(el => el.remove());
+        
+        // Name validation
+        if (name.value.trim() === "") {
+            showError(name, "Name is required.");
+            isValid = false;
+        }
+
+        // Email validation
+        if (!validateEmail(email.value)) {
+            showError(email, "Please enter a valid email address.");
+            isValid = false;
+        }
+
+        // Message validation
+        if (message.value.trim() === "") {
+            showError(message, "Message cannot be empty.");
+            isValid = false;
+        }
+
+        if (isValid) {
+            alert("Form submitted successfully!");
+            form.reset(); // Reset the form after successful validation
+        }
+    });
+
+    function showError(input, message) {
+        const error = document.createElement("div");
+        error.className = "error-message";
+        error.style.color = "red";
+        error.style.fontSize = "14px";
+        error.textContent = message;
+        input.parentNode.insertBefore(error, input.nextSibling);
+    }
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+});
+      </script>
 
 </body>
 
